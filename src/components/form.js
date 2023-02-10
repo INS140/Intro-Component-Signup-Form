@@ -16,24 +16,28 @@ export default function Form() {
     return (
         <form>
             <input
+              type="text"
               value={inputs.first}
               name="first"
               onChange={handleInputChange}
               required
             />
             <input
+              type="text"
               value={inputs.last}
               name="last"
               onChange={handleInputChange}
               required
             />
             <input
+              type="email"
               value={inputs.email}
               name="email"
               onChange={handleInputChange}
               required
             />
             <input
+              type="password"
               value={inputs.password}
               name="password"
               onChange={handleInputChange}

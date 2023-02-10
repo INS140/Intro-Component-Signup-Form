@@ -14,7 +14,8 @@ function SignupForm() {
         </div>
         <div className="form-container">
           <Form />
-          <p className="fine-print"> By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+          <p className="fine-print">By clicking the button, you are agreeing to our 
+            <span className="terms"> Terms and Services</span></p>
         </div>
       </div>
     </div>
