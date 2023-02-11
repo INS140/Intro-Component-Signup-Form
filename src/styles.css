@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -64,6 +65,7 @@ input[type=submit] {
     background: hsl(154, 59%, 51%);
     border: none;
     box-shadow: 0 4px hsl(154, 59%, 45%);
+    cursor: pointer;
 }
 
 .fine-print {
@@ -81,3 +83,25 @@ input[type=submit] {
 .attribution { font-size: 11px; text-align: center; }
 
 .attribution a { color: hsl(248, 32%, 49%); }
+
+@media only screen and (min-width: 1050px) {
+    .body { background-image: url('../public/images/bg-intro-desktop.png'); }
+
+    .card {
+        margin: 0 15%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .text-container {
+        width: 48%;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .signup-container { width: 46%; }
+}
