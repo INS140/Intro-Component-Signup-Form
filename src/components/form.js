@@ -34,6 +34,7 @@ export default function Form() {
                     value={inputs.first}
                     name="first"
                     onChange={handleInputChange}
+                    aria-label="first name"
                   />
                 </div> 
               : <div>
@@ -43,6 +44,7 @@ export default function Form() {
                     name="first"
                     onChange={handleInputChange}
                     className="field-empty"
+                    aria-label="first name"
                   />
                   <p className="warning-text"><i>First Name cannot be empty</i></p>
                 </div>
@@ -55,6 +57,7 @@ export default function Form() {
                   value={inputs.last}
                   name="last"
                   onChange={handleInputChange}
+                  aria-label="last name"
                 />
               </div>
               : <div>
@@ -64,6 +67,7 @@ export default function Form() {
                   name="last"
                   onChange={handleInputChange}
                   className="field-empty"
+                  aria-label="last name"
                 />
                 <p className="warning-text"><i>Last Name cannot be empty</i></p>
               </div>
@@ -76,6 +80,7 @@ export default function Form() {
                     value={inputs.email}
                     name="email"
                     onChange={handleEmailChange}
+                    aria-label="email"
                   />
               </div>
               : <div>
@@ -86,6 +91,7 @@ export default function Form() {
                   onChange={handleEmailChange}
                   placeholder="email@example.com"
                   className="field-empty"
+                  aria-label="email"
                 />
                 <p className="warning-text"><i>Looks like this is not an email</i></p>
               </div>
@@ -98,6 +104,7 @@ export default function Form() {
                   value={inputs.password}
                   name="password"
                   onChange={handleInputChange}
+                  aria-label="password"
                 />
               </div>
               : <div>
@@ -107,6 +114,7 @@ export default function Form() {
                   name="password"
                   onChange={handleInputChange}
                   className="field-empty"
+                  aria-label="password"
                 />
                 <p className="warning-text"><i>Password cannot be empty</i></p>
               </div>
